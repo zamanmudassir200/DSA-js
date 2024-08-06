@@ -1,11 +1,5 @@
 const data = [1, 4, 2, 5, 7, 8, 3, 8, 9, 8, 8, 8];
-// const search = 8;
-// for (let i = 0; i < data.length; i++) {
-//   if (data[i] === searchElement) {
-//     console.log(`Element: ${data[i]} found at Index: ${i} `);
-//   break;
-//   }
-// }
+
 const originalData = document.getElementById("originalData");
 originalData.innerHTML = data;
 
