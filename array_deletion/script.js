@@ -17,15 +17,3 @@ deleteBtn.addEventListener("click", () => {
     alert("Please enter valid position");
   }
 });
-// const data = [4, 5, 6, 10, 100, 2, 4, 5];
-// let position = 1;
-// if (position >= 0 && position < data.length) {
-//   for (let i = position; i < data.length - 1; i++) {
-//     data[i] = data[i + 1];
-//   }
-//   data.length = data.length - 1;
-//   console.log(data);
-// } else {
-//   console.log("Please enter valid position");
-// }
-// displayResult.innerHTML = data;
