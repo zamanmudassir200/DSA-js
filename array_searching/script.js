@@ -21,7 +21,6 @@ searchElement.addEventListener("click", () => {
     if (data[i] === search) {
       count++;
       displayResult.innerHTML += `Element: ${data[i]} found at Index: ${i}<br>`;
-      console.log(`Element: ${data[i]} found at Index: ${i}`);
     } else {
       displayResult.innerHTML = `Searched element is not found in the array`;
     }
