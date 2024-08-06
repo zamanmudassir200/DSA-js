@@ -23,4 +23,4 @@ mergeArr.addEventListener("click", () => {
   data3Ele.innerHTML = data3;
 });
 
-console.log([...data1, ...data2]);
+// console.log([...data1, ...data2]);
