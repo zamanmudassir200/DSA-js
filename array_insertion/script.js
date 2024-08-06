@@ -1,3 +1,5 @@
+const displayElement = document.getElementById("displayElement");
+
 const insertElement = () => {
   const data = [1, 54, 5, 9, 2];
 
@@ -18,7 +20,7 @@ const insertElement = () => {
           }
         }
       }
-      console.log(data);
+      displayElement.innerHTML = data;
     } else {
       alert(
         `Please entered valid position. The enter position ${position} is not available in given array`
