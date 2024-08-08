@@ -29,8 +29,5 @@ push(1000);
 pop();
 pop();
 pop();
-pop();
-pop();
-pop();
 
 console.log(data);
