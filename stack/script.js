@@ -1,14 +1,25 @@
 const data = [];
 let currentSize = data.length;
-let max = 7;
+let pushBtn = document.getElementById("push");
+let popBtn = document.getElementById("pop");
+let displayResult = document.getElementById("displayResult");
+const push = () => {
+  let newVal = document.getElementById("newVal").value;
+  let max = document.getElementById("max").value;
 
-const push = (newVal) => {
+  max = Number(max);
+  newVal = Number(newVal);
+  console.log(newVal);
   if (currentSize >= max) {
+    displayResult.textContent = `"The stack is full you cannot add more values", ${newVal}`;
     console.log("The stack is full you cannot add more values", newVal);
   } else {
     data[currentSize] = newVal;
     currentSize += 1;
+    console.log(data);
   }
+  displayResult.innerHTML = data;
+  console.log(data);
 };
 
 const pop = () => {
@@ -16,18 +27,9 @@ const pop = () => {
     currentSize -= 1;
     data.length = currentSize;
   } else {
-    console.log("Stack is already empty");
+    displayResult.textContent = `Stack is already empty`;
   }
 };
-push(4);
-push(5);
-push(5);
-push(6);
-push(10);
-push(1000);
 
-pop();
-pop();
-pop();
-
-console.log(data);
+pushBtn.addEventListener("click", push);
+popBtn.addEventListener("click", pop);
