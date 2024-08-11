@@ -1,10 +1,10 @@
 const data = [200, 100, 50, 1, 10099, 1000, -1];
 
 const selectionSort = (data) => {
-  for (let i = 0; i < data.length; i++) {
+  for (let i = data.length - 1; i >= 0; i--) {
     let minId = i;
-    for (let j = i + 1; j < data.length; j++) {
-      if (data[j] > data[minId]) {
+    for (let j = i - 1; j >= 0; j--) {
+      if (data[j] < data[minId]) {
         minId = j;
       }
     }
